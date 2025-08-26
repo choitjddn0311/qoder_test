@@ -1,0 +1,183 @@
+.calculator {
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Light Theme (Default) */
+.calculator.light-theme {
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: 2px solid #e0e0e0;
+}
+
+/* Dark Theme */
+.calculator.dark-theme {
+  background: #2d2d2d;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.calculator-display {
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  text-align: right;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 0.3s ease;
+}
+
+.light-theme .calculator-display {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+}
+
+.dark-theme .calculator-display {
+  background: #000;
+}
+
+.display-value {
+  font-size: 3rem;
+  font-weight: 300;
+  word-break: break-all;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.light-theme .display-value {
+  color: #333333;
+}
+
+.dark-theme .display-value {
+  color: white;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  height: 70px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 70px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-clear {
+  background: #ff6b6b;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-clear:hover {
+  background: #ff5252;
+}
+
+.btn-delete {
+  background: #ff6b6b;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.btn-delete:hover {
+  background: #ff5252;
+}
+
+.btn-number {
+  transition: all 0.2s ease;
+}
+
+.light-theme .btn-number {
+  background: #f1f3f4;
+  color: #333333;
+  border: 1px solid #dadce0;
+}
+
+.light-theme .btn-number:hover {
+  background: #e8eaed;
+}
+
+.dark-theme .btn-number {
+  background: #4a4a4a;
+  color: white;
+}
+
+.dark-theme .btn-number:hover {
+  background: #5a5a5a;
+}
+
+.btn-operator {
+  background: #ff9500;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-operator:hover {
+  background: #ffad33;
+}
+
+.btn-plus {
+  background: #ff9500;
+  color: white;
+}
+
+.btn-equal {
+  background: #ff9500;
+  color: white;
+}
+
+.btn-equal:hover {
+  background: #ffad33;
+}
+
+.btn-zero {
+  grid-column: span 2;
+}
+
+.btn-decimal {
+  transition: all 0.2s ease;
+}
+
+.light-theme .btn-decimal {
+  background: #f1f3f4;
+  color: #333333;
+  border: 1px solid #dadce0;
+}
+
+.light-theme .btn-decimal:hover {
+  background: #e8eaed;
+}
+
+.dark-theme .btn-decimal {
+  background: #4a4a4a;
+  color: white;
+}
+
+.dark-theme .btn-decimal:hover {
+  background: #5a5a5a;
+}
